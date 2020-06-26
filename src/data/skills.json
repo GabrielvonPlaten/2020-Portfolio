@@ -1,9 +1,10 @@
 {
   "software": [
-    { "name": "VS Code" },
     { "name": "Git" },
-    { "name": "Windows/Mac" },
-    { "name": "Figma" }
+    { "name": "Figma" },
+    { "name": "VS Code" },
+    { "name": "GitKraken" },
+    { "name": "Windows/Mac" }
   ],
   "skills": [
     { "name": "HTML" },
