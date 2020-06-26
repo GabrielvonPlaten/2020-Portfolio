@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
     <div className='footer'>
       <div className='website-info'>
         <h2 className='footer__title'>Webite created by Gabriel von Platen</h2>
-        <p>Built with React, TypeScript, and Sass</p>
+        <p>Built with React and Sass</p>
         <a
           className='footer__github-link'
           href='https://github.com/GabrielvonPlaten/2020-Portfolio'
