@@ -156,3 +156,97 @@
     transform: translateY(-10px)
   100%
     transform: translateY(0px)
+
+
+// Media Queries
+// Media Queries
+@media only screen and (max-width: 1440px)
+  .welcome
+    background-position: center
+
+  .name
+    top: 15%
+    left: 7%
+
+    &__profession
+      font-size: 1.9rem
+
+    &__gariel
+      font-size: 2.5rem
+
+    &__about
+      font-size: 1.8rem
+
+  .skills
+
+    &__inner
+      margin: 0 4rem
+
+    &__item
+      font-size: 1.7rem
+
+@media only screen and (max-width: 1050px)
+  .skills
+    top: 40%
+
+    &__inner
+      margin: 0 2rem
+
+    .skills-1
+      bottom: 150px
+
+    .skills-2
+      bottom: 75px
+
+@media only screen and (max-width: 768px)
+  .name
+    top: 10%
+
+    &__gabriel
+      font-size: 3rem
+
+    &__gabriel:before
+      height: 24px
+
+  .skills
+    display: grid
+    grid-template-columns: 1fr 1fr
+    top: 10%
+
+    &__inner
+      margin: 0 2rem
+
+    .skills-1
+      bottom: 0px
+
+    .skills-2
+      bottom: 0px
+
+@media only screen and (max-width: 425px)
+  .welcome
+    height: 100vh
+    display: grid
+    grid-template-columns: 1fr
+
+  .name
+    width: 85%
+    position: static
+
+    &__gabriel
+      font-size: 3.5rem
+
+    &__gabriel:before
+      font-size: 28px
+
+  .skills
+    position: static
+    grid-template-columns: repeat(3, 1fr)
+
+    &__title
+      position: static
+
+    &__item
+      font-size: 1.5rem
+
+  .arrow-down
+    display: none

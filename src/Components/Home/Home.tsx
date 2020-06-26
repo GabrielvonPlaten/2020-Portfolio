@@ -59,88 +59,89 @@ export const Home: React.FC = () => {
   });
 
   return (
-    <div className='welcome'>
-      <div className='name'>
-        <h3 className='name__profession anim_left' data-delay='0.5s'>
-          Frontend Developer - Stockholm, Sweden
-        </h3>
-        <h1 className='name__gabriel anim_left' data-delay='1s'>
-          Gabriel von Platen
-        </h1>
-        <div className='name__line anim_left' data-delay='0.8s' />
-        <div className='name__about anim_left' data-delay='0.5s'>
-          <p>
-            Veniam anim nostrud et commodo irure duis culpa eu mollit dolore
-            magna. Nostrud magna ipsum ea pariatur id nostrud est consequat
-            incididunt do ea. Aliqua nostrud amet irure eiusmod est
-            reprehenderit occaecat ea cillum velit reprehenderit non dolore sit.
-            Pariatur sunt nulla aliquip minim ut proident eiusmod.
-          </p>
+    <div>
+      <div className='welcome'>
+        <div className='name'>
+          <h3 className='name__profession anim_left' data-delay='0.5s'>
+            Frontend Developer - Stockholm, Sweden
+          </h3>
+          <h1 className='name__gabriel anim_left' data-delay='1s'>
+            Gabriel von Platen
+          </h1>
+          <div className='name__line anim_left' data-delay='0.8s' />
+          <div className='name__about anim_left' data-delay='0.5s'>
+            <p>
+              Veniam anim nostrud et commodo irure duis culpa eu mollit dolore
+              magna. Nostrud magna ipsum ea pariatur id nostrud est consequat
+              incididunt do ea. Aliqua nostrud amet irure eiusmod est
+              reprehenderit occaecat ea cillum velit reprehenderit non dolore
+              sit. Pariatur sunt nulla aliquip minim ut proident eiusmod.
+            </p>
+          </div>
+          <ul className='name__social-medias anim_left' data-delay='1s'>
+            <li>
+              <a
+                href='https://www.linkedin.com/in/gabriel-von-platen-9a89ab12a/'
+                target='_blank'
+              >
+                <img className='svg-icon' src={LinkedIn} alt='LinkedIn Link' />
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://github.com/GabrielvonPlaten'
+                target='_blank'
+                data-delay='1s'
+              >
+                <img className='svg-icon' src={Github} alt='Github Link' />
+              </a>
+            </li>
+          </ul>
+          <a
+            href='https://docdro.id/3DDTnni'
+            target='_blank'
+            className='btn btn--orange name__resume-btn anim_left'
+            data-delay='1s'
+          >
+            My Resume
+          </a>
         </div>
-        <ul className='name__social-medias anim_left' data-delay='1s'>
-          <li>
-            <a
-              href='https://www.linkedin.com/in/gabriel-von-platen-9a89ab12a/'
-              target='_blank'
-            >
-              <img className='svg-icon' src={LinkedIn} alt='LinkedIn Link' />
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://github.com/GabrielvonPlaten'
-              target='_blank'
-              data-delay='1s'
-            >
-              <img className='svg-icon' src={Github} alt='Github Link' />
-            </a>
-          </li>
-        </ul>
-        <a
-          href='https://docdro.id/3DDTnni'
-          target='_blank'
-          className='btn btn--orange name__resume-btn anim_left'
-          data-delay='1s'
-        >
-          My Resume
-        </a>
+
+        <div className='skills'>
+          <div className='skills__inner skills-1 anim_right' data-delay='1s'>
+            <h3 className='skills__title'>Skills</h3>
+            <ul className='skills__list'>
+              {skillsData.skills.map((skills: any, index: number) => (
+                <li key={index} className='skills__item'>
+                  {skills.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className='skills__inner skills-2 anim_right' data-delay='0.6s'>
+            <h3 className='skills__title'>Software</h3>
+            <ul className='skills__list'>
+              {skillsData.software.map((software: any, index: number) => (
+                <li key={index} className='skills__item'>
+                  {software.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className='skills__inner skills-3 anim_right' data-delay='0.4s'>
+            <h3 className='skills__title'>Improving</h3>
+            <ul className='skills__list'>
+              {skillsData.improving.map((improving: any, index: number) => (
+                <li key={index} className='skills__item'>
+                  {improving.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div className='skills'>
-        <div className='skills__inner skills-1 anim_right' data-delay='1s'>
-          <h3 className='skills__title'>Skills</h3>
-          <ul className='skills__list'>
-            {skillsData.skills.map((skills: any, index: number) => (
-              <li key={index} className='skills__item'>
-                {skills.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className='skills__inner skills-2 anim_right' data-delay='0.6s'>
-          <h3 className='skills__title'>Software</h3>
-          <ul className='skills__list'>
-            {skillsData.software.map((software: any, index: number) => (
-              <li key={index} className='skills__item'>
-                {software.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className='skills__inner skills-3 anim_right' data-delay='0.4s'>
-          <h3 className='skills__title'>Improving</h3>
-          <ul className='skills__list'>
-            {skillsData.improving.map((improving: any, index: number) => (
-              <li key={index} className='skills__item'>
-                {improving.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
       <div className='arrow-down anim_top' data-delay='0.7s'>
         <div>
           <p className='arrow-down__text'>Projects</p>
