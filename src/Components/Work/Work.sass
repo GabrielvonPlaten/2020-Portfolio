@@ -83,3 +83,27 @@
 
 .work-container__work:hover .work-darkBackground
   bottom: 100%
+
+@media only screen and (max-width: 1210px)
+  .work-container
+    &__work
+      background-position: center
+
+@media only screen and (max-width: 1000px)
+  .work-container
+    margin: 2rem 2%
+    width: 95%
+
+  .work-about
+    height: 27%
+
+  .work-container__work:hover .work-about
+    bottom: 25%
+
+@media only screen and (max-width: 1000px)
+  .work-container
+    grid-template-columns: repeat(1, 1fr)
+    margin: 0 auto
+
+    &__work
+      width: 90%

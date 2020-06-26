@@ -142,9 +142,10 @@ export const Home: React.FC = () => {
           </div>
         </div>
       </div>
+
       <div className='arrow-down anim_top' data-delay='0.7s'>
         <div>
-          <p className='arrow-down__text'>Projects</p>
+          <p className='arrow-down__text'>Work</p>
           <p className='arrow-down__arrow'>&darr;</p>
         </div>
       </div>
