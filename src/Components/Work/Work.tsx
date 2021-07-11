@@ -37,6 +37,7 @@ export const Work: React.FC = () => {
                   </li>
                 )}
                 <li>
+                {work?.website && (
                   <a
                     className='btn btn--small'
                     href={work.website}
@@ -44,6 +45,7 @@ export const Work: React.FC = () => {
                   >
                     Website
                   </a>
+                )}
                 </li>
               </ul>
             </div>

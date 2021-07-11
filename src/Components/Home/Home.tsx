@@ -15,9 +15,9 @@ interface EntryInterface {
 
 export const Home: React.FC = () => {
   useEffect(() => {
-    const elements_left: any = document.querySelectorAll('.anim_left');
-    const elements_right: any = document.querySelectorAll('.anim_right');
-    const elements_top: any = document.querySelectorAll('.anim_top');
+    const elements_left = document.querySelectorAll('.anim_left');
+    const elements_right = document.querySelectorAll('.anim_right');
+    const elements_top = document.querySelectorAll('.anim_top');
 
     const observer = new IntersectionObserver(
       (entries: any) => {
@@ -97,14 +97,14 @@ export const Home: React.FC = () => {
               </a>
             </li>
           </ul>
-          <a
+          {/* <a
             href='https://docdro.id/3DDTnni'
             target='_blank'
             className='btn btn--orange name__resume-btn anim_left'
             data-delay='1s'
           >
             My Resume
-          </a>
+          </a> */}
         </div>
 
         <div className='skills'>
