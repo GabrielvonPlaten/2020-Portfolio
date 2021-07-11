@@ -1,16 +1,21 @@
 {
   "works": [
     {
-      "name": "Snicks",
-      "thumbnail": "https://i.imgur.com/JFxvRLX.png",
-      "github": null,
-      "website": "https://snicksstories.com/",
-      "description": "A mobile application for reading & sharing stories.",
-      "tech": [{ "name": "React Native" }, { "name": "Sketch" }]
+      "name": "Spotify Clone",
+      "thumbnail": "https://i.imgur.com/pHj561k.png",
+      "github": "https://github.com/GabrielvonPlaten/Spotify-Clone",
+      "website": "https://clone-spotify-g.herokuapp.com/",
+      "description": "Play albums/playlists. Listen to your favorite artist's, and add/remove tracks to a playlist.",
+      "tech": [
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Redux" },
+        { "name": "Sass" }
+      ]
     },
     {
       "name": "IMDb Clone",
-      "thumbnail": "https://i.imgur.com/LCBgxjn.png",
+      "thumbnail": "https://i.imgur.com/pe1gQGQ.png",
       "github": "https://github.com/GabrielvonPlaten/Filmor-Client",
       "website": "https://filmor.herokuapp.com/",
       "description": "An IMDb clone using TMDb's API.",
@@ -19,6 +24,25 @@
         { "name": "TypeScript" },
         { "name": "Sass" },
         { "name": "Webpack" }
+      ]
+    },
+    {
+      "name": "Snicks",
+      "thumbnail": "https://i.imgur.com/JFxvRLX.png",
+      "github": null,
+      "website": "https://snicksstories.com/",
+      "description": "A mobile application for reading & sharing stories.",
+      "tech": [{ "name": "React Native" }, { "name": "Sketch" }]
+    },
+    {
+      "name": "Deskky",
+      "thumbnail": "https://i.imgur.com/6MK2YJF.png",
+      "github": "https://github.com/GabrielvonPlaten/Deskky",
+      "description": "A desktop application that monitors your system information.",
+      "tech": [
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Electron" }
       ]
     },
     {
