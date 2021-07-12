@@ -71,10 +71,10 @@ export const Home: React.FC = () => {
           <div className='name__line anim_left' data-delay='0.8s' />
           <div className='name__about anim_left' data-delay='0.5s'>
             <p>
-              Hello! I am a Frontend Developer with +3 years of experience. From
-              self taught to developing in React, TypeScript, and Vue, I still
-              have the motivation to keep learning and keep creating
-              applications and websites for users to see and use.
+              Hello! I am a Frontend Developer with experience working with
+              JavaScript, React, Scss, and TypeScript. I'm highly motivated to
+              keep learning about web development and to push my skills in my
+              next project.
             </p>
             <p>Shoot me a message! I'm always looking for new opportunities!</p>
           </div>
