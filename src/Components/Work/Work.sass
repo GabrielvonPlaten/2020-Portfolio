@@ -9,10 +9,11 @@
   font-size: 4rem
 
 .work-container__work
-  justify-content: space-between
+  justify-content: space-around
   border-bottom: 1px solid $border-dark
   width: 50%
-  margin: 8% auto
+  height: auto
+  margin: min(8%, 7em) auto
   padding-bottom: 4em
 
   .blur-container
@@ -23,17 +24,18 @@
     color: $white-0
     margin: 0 0.8em
     position: relative
+    width: 50%
 
     h2
       font-size: 1.7em
       margin: 0
       margin-top: 0.8em
 
-    p
-
     &__buttons
-      position: absolute
-      top: 88%
+      display: block
+      margin-top: 20%
+      // position: absolute
+      // top: max(88%, 15em)
 
   a
     margin-right: 1em
@@ -62,9 +64,10 @@
     color: $orange-3
 
   &--image
+    margin-left: 2em
 
     img
-      width: 30em
+      width: min(35em, 30vw)
       height: auto
       max-height: 22em
       filter: drop-shadow(0px 0px 10px $black-050)
