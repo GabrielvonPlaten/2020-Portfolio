@@ -2,10 +2,10 @@
   "works": [
     {
       "name": "Spotify Clone",
-      "thumbnail": "https://i.imgur.com/pHj561k.png",
+      "thumbnail": "https://i.imgur.com/e7jK9AG.png",
       "github": "https://github.com/GabrielvonPlaten/Spotify-Clone",
       "website": "https://clone-spotify-g.herokuapp.com/",
-      "description": "Play albums/playlists. Listen to your favorite artist's, and add/remove tracks to a playlist.",
+      "description": "A personal project using Spotify's own API. Here you are able to search artists, songs, and playlists. Listen to your playlists, and modify them by adding or removing songs. Built entirely with React+TypeScript, and Redux to manage data across components.",
       "tech": [
         { "name": "React" },
         { "name": "TypeScript" },
@@ -18,7 +18,7 @@
       "thumbnail": "https://i.imgur.com/pe1gQGQ.png",
       "github": "https://github.com/GabrielvonPlaten/Filmor-Client",
       "website": "https://filmor.herokuapp.com/",
-      "description": "An IMDb clone using TMDb's API.",
+      "description": "An IMDb clone using TMDb's API. Design by me. I had a old school assignment to build an IMDb clone that I wasn't satisfy with, so after I graduated I decided to rebuild it with React and TypeScript. I have plans to further develop this project soon.",
       "tech": [
         { "name": "React" },
         { "name": "TypeScript" },
@@ -27,22 +27,23 @@
       ]
     },
     {
-      "name": "Snicks",
+      "name": "Snicks (Now Naudio)",
       "thumbnail": "https://i.imgur.com/JFxvRLX.png",
       "github": null,
       "website": "https://snicksstories.com/",
-      "description": "A mobile application for reading & sharing stories.",
+      "description": "A mobile application for reading & sharing stories. I was a frontend Developer at Snicks were I worked with implementing new functions and designs to the applications.",
       "tech": [{ "name": "React Native" }, { "name": "Sketch" }]
     },
     {
       "name": "Deskky",
       "thumbnail": "https://i.imgur.com/6MK2YJF.png",
       "github": "https://github.com/GabrielvonPlaten/Deskky",
-      "description": "A desktop application that monitors your system information.",
+      "description": "A desktop application that monitors your system information. After learning a bit more about electron I decided to build a small project to track your PC's information like Temperature, displays, GPU model, uptime and more.",
       "tech": [
         { "name": "React" },
         { "name": "TypeScript" },
-        { "name": "Electron" }
+        { "name": "Electron" },
+        { "name": "Google Graphs" }
       ]
     },
     {

@@ -8,75 +8,73 @@
   margin-top: 3rem
   font-size: 4rem
 
-.work-container
-  display: grid
-  margin: 2rem 5%
-  width: 90%
-  grid-template-columns: repeat(2, 1fr)
+.work-container__work
+  justify-content: space-between
+  border-bottom: 1px solid $border-dark
+  width: 50%
+  margin: 8% auto
+  padding-bottom: 4em
 
-  &__work
-    margin: 10% auto
-    width: 95%
-    height: 550px
-    overflow: hidden
-    background-size: cover
-    box-shadow: 0px 0px 25px #161616
+  .blur-container
+    display: flex
+    padding: -5px
 
-  .work-about
-    background: red
-    heigth: 200px
+  &-info
+    color: $white-0
+    margin: 0 0.8em
+    position: relative
 
     h2
-      font-size: 3rem
-
-  .work-darkBackground
-    height: 550px
-    width: 100%
-    position: relative
-    bottom: 0
-    z-index: 2
-    backdrop-filter: saturate(150%) blur(10px)
-    background-color: rgba(0, 10, 10, 0.4)
-    transition: all 0.7s
-    transition-timing-function: cubic-bezier(.29,.56,.2,.85)
-
-  .work-about
-    position: relative
-    bottom: -20px
-    height: 25%
-    background: $bg-darker
-    padding: 5px 0 0 22px
-    z-index: 10
-    box-shadow: 0px -5px 10px -4px #14190f
-    transition: all 0.4s
-    transition-timing-function: cubic-bezier(.32,.39,.19,.99)
-
-    h2
-      font-size: 1.7rem
-      color: $white-0
-
-    .tech-list
-      display: flex
-
-      &__item
-        color: $orange-3
-        margin-right: 1.5%
-        list-style: none
-    
-    .links-list
-      bottom: 30px
-      display: flex
-      justify-content: flex-end
-      margin-right: 2%
-      position: relative
-      list-style-type: none
-      
-      li
-        margin-left: 1.5%
+      font-size: 1.7em
+      margin: 0
+      margin-top: 0.8em
 
     p
-      color: $white-0
-      width: 60%
+
+    &__buttons
+      position: absolute
+      top: 88%
+
+  a
+    margin-right: 1em
+    border: none
+    padding: 0.7rem 1rem
+    background: none
+    text-decoration: none
+    color: $white-4
+    border: 1px solid $white-4  
+    transition: 0.3s
+    font-weight: 400
+    border-radius: 4px
+
+    &:hover
+      border: 1px solid $orange-2
+      background: $orange-2
+      color: $black-150
+    
+  ul
+    display: flex
+  
+  li
+    list-style: none
+    margin-top: 0.5em
+    margin-right: 1em
+    color: $orange-3
+
+  &--image
+
+    img
+      width: 30em
+      height: auto
+      max-height: 22em
+      filter: drop-shadow(0px 0px 10px $black-050)
+
+
+@keyframes unblur
+  from
+    filter: blur(7px)
+  to
+    filter: blur(0px)
 
 .work-container__work:hover .work-about
   bottom: 25%

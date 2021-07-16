@@ -22,7 +22,6 @@ export const Home: React.FC = () => {
     const observer = new IntersectionObserver(
       (entries: any) => {
         entries.forEach((entry: EntryInterface) => {
-          console.log(entry);
           if (entry.target.className.includes('anim_left')) {
             if (entry.intersectionRatio > 0) {
               entry.target.style.animation = `anim_from_left 2.6s ${entry.target.dataset.delay} forwards ease-out`;
