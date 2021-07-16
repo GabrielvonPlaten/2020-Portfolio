@@ -1,5 +1,6 @@
 import React, { useEffect, Fragment } from 'react';
 import './Home.sass';
+import BackgroundImage from '../../Styles/images/Union.png';
 
 // Data
 import skillsData from '../../data/skills.json';
@@ -59,7 +60,10 @@ export const Home: React.FC = () => {
 
   return (
     <div>
-      <div className='welcome'>
+      <div
+        className='welcome'
+        style={{ background: `url(${BackgroundImage})` }}
+      >
         <div className='name'>
           <h3 className='name__profession anim_left' data-delay='0.5s'>
             Frontend Developer - Stockholm, Sweden
