@@ -7,13 +7,15 @@
   font-family: Georgia, 'Times New Roman', Times, serif
   margin-top: 3rem
   font-size: 4rem
+  word-spacing: 0.1em
 
 .work-container__work
   justify-content: space-around
   border-bottom: 1px solid $border-dark
   width: 50%
   height: auto
-  margin: min(8%, 7em) auto
+  padding: min(8%, 7em) 0
+  margin: 0 auto
   padding-bottom: 4em
 
   .blur-container
@@ -59,8 +61,10 @@
   
   li
     list-style: none
-    margin-top: 0.5em
-    margin-right: 1em
+    margin: 
+      top: 0.5em 
+      right: 1em 
+      bottom: 0
     color: $orange-3
 
   &--image

@@ -12,6 +12,7 @@
     { "name": "JavaScript" },
     { "name": "TypeScript" },
     { "name": "React.js" },
+    { "name": "Redux" },
     { "name": "Vue.js" }
   ],
   "improving": [

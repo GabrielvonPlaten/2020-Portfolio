@@ -1,0 +1,54 @@
+@import '../../Styles/style.sass'
+  
+.github
+  margin-bottom: 5%
+
+  .github-title
+    color: $white-5
+    font-weight: 200
+    text-align: center 
+    font-family: Georgia, 'Times New Roman', Times, serif
+    margin-top: 3rem
+    font-size: 4rem
+
+.github-repo
+  display: flex
+  justify-content: space-around
+  list-style: none
+  flex-wrap: wrap
+  width: 80%
+  margin: 0 auto
+
+  a
+    text-decoration: none
+    color: $white-5
+    margin: 1em 0
+    border: 1px solid $white-8
+    background: $bg-dark-3
+    padding: 1em
+    text-align: center
+    width: 30%
+    transition: 0.3s
+
+    &:hover
+      border: 1px solid $white-0
+
+  &__item
+
+    &__title
+      display: flex
+      margin: 0 auto
+      justify-content: center
+      gap: 0.5em
+
+      h2
+        color: $white-0
+
+    &__language
+      color: $orange-2
+      margin:
+        top: 0
+        bottom: 0.5em
+      font-weight: 400
+      font-size: 1.9rem
+  

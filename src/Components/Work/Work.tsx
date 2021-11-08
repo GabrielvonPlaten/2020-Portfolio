@@ -16,7 +16,6 @@ export const Work: React.FC = () => {
     const observer = new IntersectionObserver(
       (entries: any) => {
         entries.forEach((entry: EntryInterface) => {
-          console.log(entry);
           if (
             entry.target.className.includes('blur-0') &&
             entry.isIntersecting
@@ -40,7 +39,7 @@ export const Work: React.FC = () => {
   return (
     <Fragment>
       <div>
-        <h2 className='works-title'>Work</h2>
+        <h2 className='works-title'>Work & Projects</h2>
       </div>
       <div className='work-container'>
         {workData.works.map((work: any, index: number) => (
@@ -50,7 +49,9 @@ export const Work: React.FC = () => {
                 <h2>{work.name}</h2>
                 <ul>
                   {work.tech.map((tech: any, index: number) => (
-                    <li>{tech.name}</li>
+                    <li key={index}>
+                      <p>{tech.name}</p>
+                    </li>
                   ))}
                 </ul>
                 <p>{work.description}</p>

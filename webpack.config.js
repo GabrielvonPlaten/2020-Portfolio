@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
 
 module.exports = {
   entry: ['babel-polyfill', './src/index.tsx'],
